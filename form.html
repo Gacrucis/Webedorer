@@ -82,7 +82,10 @@
                     </div>
                     <div>
                         <div>
-                        <button>Agregar personalizado</button>
+                            <button class="mdc-button mdc-button--outlined">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__label">Agregar personalizado</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -94,17 +97,21 @@
         </fieldset>
         <fieldset>
             <legend>Controles</legend>
-            <button class="mdc-button mdc-button--raised">
-                <span class="mdc-button__label">Remover Seleccionado</span>
-            </button>
-            <button class="mdc-button mdc-button--outlined">
-                <span class="mdc-button__ripple"></span>
-                <span class="mdc-button__label">Descargar plantilla</span>
-            </button>
-            <button class="mdc-button mdc-button--outlined">
-                <span class="mdc-button__ripple"></span>
-                <span class="mdc-button__label">Subir plantilla</span>
-            </button>
+            <span>
+                <button class="mdc-button mdc-button--raised fill-horizontal">
+                    <span class="mdc-button__label">Remover Seleccionado</span>
+                </button>
+            </span>
+            <span>
+                <button class="mdc-button mdc-button--outlined half-fill-horizontal">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Descargar plantilla</span>
+                </button>
+                <button class="mdc-button mdc-button--outlined half-fill-horizontal">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Subir plantilla</span>
+                </button>
+            </span>
         </fieldset>
         <fieldset>
             <legend>Información de orden</legend>

@@ -1,0 +1,16 @@
+span{
+    display: block;
+    width: 30em;
+    height: fit-content;
+    /* margin: 0 auto; */
+    text-align: center
+}
+
+.fill-horizontal{
+    width: 100%;
+}
+
+.half-fill-horizontal{
+    width: 49%;
+}
+
