@@ -4,76 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Material components -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS custom reference -->
+    <link rel="stylesheet" href="styles/style.css">
     <title>Form</title>
 </head>
 <body>
     <form>
-        <div class="form-group row">
-            <label for="inputProveedor" class="col-sm-2 col-form-label">Proveedor:</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputProveedor placeholder="">
+        <fieldset>
+            <legend>Información básica</legend>
+            <div>
+                <label for="inputProveedor">Proveedor:</label>
+                <div>
+                <input type="text" id="inputProveedor" placeholder="">
+                </div>
             </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputEncargado" class="col-sm-2 col-form-label">Encargado:</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEncargado" placeholder="">
+            <div>
+                <label for="inputEncargado">Encargado:</label>
+                <div>
+                <input type="text" class="form-control" id="inputEncargado" placeholder="">
+                </div>
             </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputExtension" class="col-sm-2 col-form-label">Encargado:</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputExtension" placeholder="">
+            <div>
+                <label for="inputExtension">Extensión:</label>
+                <div>
+                <input type="text" id="inputExtension" placeholder="">
+                </div>
             </div>
-        </div>
-        <fieldset class="form-group column">
+        </fieldset>
+        <fieldset>
+            <legend>Productos</legend>
+            <div>
+                <label for="inputProducto">Proveedor:</label>
+                <div>
+                <input type="text" id="inputProducto" placeholder="">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <!-- Desplegable -->
             <legend>Agregar producto personalizado</legend>
-            <div class="column">
-                <div class="col-sm-10">
-                    <div class="form-group row">
-                        <label for="inputIdentificador" class="col-sm-2 col-form-label">Identificador:</label>
-                        <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputIdentificador" placeholder="">
+            <div>
+                <div>
+                    <div>
+                        <label for="inputIdentificador">Identificador:</label>
+                        <div>
+                        <input type="text" id="inputIdentificador" placeholder="">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputDescripcion" class="col-sm-2 col-form-label">Descripcion:</label>
-                        <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputDescripcion" placeholder="">
+                    <div>
+                        <label for="inputDescripcion">Descripcion:</label>
+                        <div>
+                        <input type="text" id="inputDescripcion" placeholder="">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputEspecificaciones" class="col-sm-2 col-form-label">Especificaciones:</label>
-                        <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputEspecificaciones" placeholder="">
+                    <div>
+                        <label for="inputEspecificaciones">Especificaciones:</label>
+                        <div>
+                        <input type="text" id="inputEspecificaciones" placeholder="">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputUnidad" class="col-sm-2 col-form-label">Unidad:</label>
+                    <div>
+                        <label for="inputUnidad">Unidad:</label>
                         <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputUnidad" placeholder="">
+                        <input type="text" id="inputUnidad" placeholder="">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputValor" class="col-sm-2 col-form-label">Valor:</label>
-                        <div class="col-sm-10">
-                        <input type="number" class="form-control" id="inputValor" placeholder="">
+                    <div>
+                        <label for="inputValor">Valor:</label>
+                        <div>
+                        <input type="number" id="inputValor" placeholder="">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Agregar personalizado</button>
+                    <div>
+                        <div>
+                        <button>Agregar personalizado</button>
                         </div>
                     </div>
                 </div>
             </div>
         </fieldset>
-        <div class="form-group row">
-            <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Generar planilla</button>
-            </div>
-        </div>
+        <fieldset>
+            <legend>Orden</legend>
+
+        </fieldset>
+        <fieldset>
+            <legend>Controles</legend>
+            <button class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Remover Seleccionado</span>
+            </button>
+            <button class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Descargar plantilla</span>
+            </button>
+            <button class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Subir plantilla</span>
+            </button>
+        </fieldset>
+        <fieldset>
+            <legend>Información de orden</legend>
+
+        </fieldset>
     </form>
+
 </body>
 </html>
