@@ -18,30 +18,30 @@
         <fieldset>
             <legend>Información básica</legend>
             <div>
-                <label for="inputProveedor">Proveedor:</label>
+                <label for="input-proveedor">Proveedor:</label>
                 <div>
-                <input type="text" id="inputProveedor" placeholder="">
+                <input type="text" id="input-proveedor" placeholder="">
                 </div>
             </div>
             <div>
-                <label for="inputEncargado">Encargado:</label>
+                <label for="input-encargado">Encargado:</label>
                 <div>
-                <input type="text" class="form-control" id="inputEncargado" placeholder="">
+                <input type="text" class="form-control" id="input-encargado" placeholder="">
                 </div>
             </div>
             <div>
-                <label for="inputExtension">Extensión:</label>
+                <label for="input-extension">Extensión:</label>
                 <div>
-                <input type="text" id="inputExtension" placeholder="">
+                <input type="text" id="input-extension" placeholder="">
                 </div>
             </div>
         </fieldset>
         <fieldset>
             <legend>Productos</legend>
             <div>
-                <label for="inputProducto">Proveedor:</label>
+                <label for="input-producto">Inserte un producto a buscar:</label>
                 <div>
-                <input type="text" id="inputProducto" placeholder="">
+                <input type="text" id="input-producto" placeholder="">
                 </div>
             </div>
         </fieldset>
@@ -51,33 +51,33 @@
             <div>
                 <div>
                     <div>
-                        <label for="inputIdentificador">Identificador:</label>
+                        <label for="input-identificador">Identificador:</label>
                         <div>
-                        <input type="text" id="inputIdentificador" placeholder="">
+                        <input type="text" id="input-identificador" placeholder="">
                         </div>
                     </div>
                     <div>
-                        <label for="inputDescripcion">Descripcion:</label>
+                        <label for="input-descripcion">Descripcion:</label>
                         <div>
-                        <input type="text" id="inputDescripcion" placeholder="">
+                        <input type="text" id="input-descripcion" placeholder="">
                         </div>
                     </div>
                     <div>
-                        <label for="inputEspecificaciones">Especificaciones:</label>
+                        <label for="input-especificaciones">Especificaciones:</label>
                         <div>
-                        <input type="text" id="inputEspecificaciones" placeholder="">
+                        <input type="text" id="input-especificaciones" placeholder="">
                         </div>
                     </div>
                     <div>
-                        <label for="inputUnidad">Unidad:</label>
+                        <label for="input-unidad">Unidad:</label>
                         <div class="col-sm-10">
-                        <input type="text" id="inputUnidad" placeholder="">
+                        <input type="text" id="input-unidad" placeholder="">
                         </div>
                     </div>
                     <div>
-                        <label for="inputValor">Valor:</label>
+                        <label for="input-valor">Valor:</label>
                         <div>
-                        <input type="number" id="inputValor" placeholder="">
+                        <input type="number" id="input-valor" placeholder="">
                         </div>
                     </div>
                     <div>
@@ -98,16 +98,16 @@
         <fieldset>
             <legend>Controles</legend>
             <span>
-                <button class="mdc-button mdc-button--raised fill-horizontal">
+                <button class="mdc-button mdc-button--raised fill-horizontal" id="boton-remover">
                     <span class="mdc-button__label">Remover Seleccionado</span>
                 </button>
             </span>
             <span>
-                <button class="mdc-button mdc-button--outlined half-fill-horizontal">
+                <button class="mdc-button mdc-button--outlined half-fill-horizontal" id="boton-descargar">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">Descargar plantilla</span>
                 </button>
-                <button class="mdc-button mdc-button--outlined half-fill-horizontal">
+                <button class="mdc-button mdc-button--outlined half-fill-horizontal" id="edwaaaaaar">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">Subir plantilla</span>
                 </button>
@@ -115,9 +115,23 @@
         </fieldset>
         <fieldset>
             <legend>Información de orden</legend>
-
+            <label class="mdc-text-field mdc-text-field--filled mdc-text-field--textarea mdc-text-field--no-label">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-text-field__resizer">
+                  <textarea class="mdc-text-field__input" rows="4" cols="40" placeholder="Especifique detalle de orden (opcional)" id="detalle-orden" aria-label="Label"></textarea>
+                </span>
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <input type="date">
+            <input type="time">
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="lugar-entrega">Edificio, piso, dirección completa</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="lugar-entrega">
+                <span class="mdc-line-ripple"></span>
+            </label>
         </fieldset>
-    </form>
+    </form> 
 
 </body>
 </html>
