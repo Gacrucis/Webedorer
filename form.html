@@ -196,14 +196,14 @@
             <legend>Orden</legend>
 
         </fieldset>
-        <fieldset class="half-fill-horizontal">
+        <fieldset class="display-inline solo-25-per">
             <legend>Controles</legend>
             <span>
-                <button class="mdc-button mdc-button--raised fill-horizontal" id="boton-remover">
+                <button class="mdc-button mdc-button--raised fill-horizontal" id="boton-remover" style="margin-bottom: 1%;">
                     <span class="mdc-button__label">Remover Seleccionado</span>
                 </button>
             </span>
-            <span>
+            <span class="container">
                 <button class="mdc-button mdc-button--outlined half-fill-horizontal" id="boton-descargar">
                     <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">Descargar plantilla</span>
@@ -214,23 +214,27 @@
                 </button>
             </span>
         </fieldset>
-        <fieldset class="half-fill-horizontal">
+        <fieldset class="display-inline auto-width">
             <legend>Información de orden</legend>
-            <label class="mdc-text-field mdc-text-field--filled mdc-text-field--textarea mdc-text-field--no-label">
+            <label class="mdc-text-field mdc-text-field--filled mdc-text-field--textarea mdc-text-field--no-label display-inline">
                 <span class="mdc-text-field__ripple"></span>
                 <span class="mdc-text-field__resizer">
                   <textarea class="mdc-text-field__input" rows="4" cols="40" placeholder="Especifique detalle de orden (opcional)" id="detalle-orden" aria-label="Label"></textarea>
                 </span>
                 <span class="mdc-line-ripple"></span>
             </label>
-            <input type="date">
-            <input type="time">
-            <label class="mdc-text-field mdc-text-field--filled">
-                <span class="mdc-text-field__ripple"></span>
-                <span class="mdc-floating-label" id="lugar-entrega">Edificio, piso, dirección completa</span>
-                <input class="mdc-text-field__input" type="text" aria-labelledby="lugar-entrega">
-                <span class="mdc-line-ripple"></span>
-            </label>
+            <span class="display-inline">
+              <div class="container solo-25-per">
+                <input type="date" class="half-fill-horizontal">
+                <input type="time" class="half-fill-horizontal">
+              </div>
+              <label class="mdc-text-field mdc-text-field--filled fill-horizontal">
+                  <span class="mdc-text-field__ripple"></span>
+                  <span class="mdc-floating-label" id="lugar-entrega">Edificio, piso, dirección completa</span>
+                  <input class="mdc-text-field__input" type="text" aria-labelledby="lugar-entrega">
+                  <span class="mdc-line-ripple"></span>
+              </label>
+            </span>
         </fieldset>
     </form> 
 

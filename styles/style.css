@@ -11,6 +11,23 @@
 }
 
 .half-fill-horizontal{
-    width: 49%;
+    width: 49.75%;
 }
 
+.display-inline{
+    display: inline-block;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.solo-25-per{
+    width: 25%;
+}
+
+.auto-width{
+    width: 71.4%;
+}
