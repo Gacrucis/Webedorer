@@ -2,6 +2,37 @@ body {
     background-color: #67b93e33;
 }
 
+.mdl-card {
+    overflow-x: auto !important;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.control-container {
+    width: 100%;
+    margin: auto;
+    min-height: 0;
+    
+}
+
+.check-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
 .buttons{
     /* display: block; */
     width: 30em;
@@ -16,26 +47,6 @@ body {
 
 .display-inline{
     display: inline-block;
-}
-
-.container-custom {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.check-container{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: stretch;
-    justify-content: space-evenly;
 }
 
 .solo-25-per{
@@ -72,11 +83,4 @@ body {
 .uis-off-colors {
     color: #fff !important;
     background: #67b93ecb !important;
-}
-
-.control-container {
-    width: 100%;
-    margin: auto;
-    min-height: 0;
-    
 }

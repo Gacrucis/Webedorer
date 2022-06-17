@@ -1,5 +1,6 @@
 .center-card.mdl-card {
     width: 60%;
+    min-width: 400px;
     margin: auto;
 }
 
