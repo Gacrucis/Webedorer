@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material components Lite-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mdl.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-light_green.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Datepicker MDL -->
+    <script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="node_modules/epepite-datepicker/dist/datepicker.min.js"></script>
+
+    <title>Solicitudes Bienestar UIS</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://uis.edu.co/wp-content/uploads/2020/09/cropped-Favicon-UIS-4-192x192.png">
+</head>
+
+<body>
+    <!-- Un espacio al inicio de la pag -->
+    <div class="spacer">
+        &nbsp;
+    </div>
+
+    <form>
+
+        <div class="center-card mdl-card mdl-shadow--2dp">
+
+            <div class="mdl-card__title uis-colors">
+                <h2 class="mdl-card__title-text">Información Básica</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                Información sobre las personas que realizan la solicitud
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+                <fieldset class="container">
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info-input">
+                        <input class="mdl-textfield__input info-input" type="text" id="info-input-1">
+                        <label class="mdl-textfield__label" for="info-input-1">Proveedor</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="info-input-2">
+                        <label class="mdl-textfield__label" for="info-input-2">Encargado</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="info-input-2">
+                        <label class="mdl-textfield__label" for="info-input-2">Extensión</label>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div class="center-card mdl-card mdl-shadow--2dp">
+
+            <div class="mdl-card__title uis-colors">
+                <h2 class="mdl-card__title-text">Productos</h2>
+            </div>
+
+            <div class="container fill-horizontal">
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                        <i class="material-icons">search</i>
+                    </label>
+
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="sample6">
+                        <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                    </div>
+                </div>
+
+                <label for="">Filtrar por: </label>
+
+                <div class="check-container">
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                        <span class="mdl-checkbox__label right-margin">Checkbox</span>
+                    </label>
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                        <span class="mdl-checkbox__label right-margin">Checkbox</span>
+                    </label>
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                        <span class="mdl-checkbox__label right-margin">Checkbox</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Identificador</th>
+                        <th>Descripcion</th>
+                        <th>Especificaciones</th>
+                        <th>Unidad</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Desayuno A</td>
+                        <td>Arepa con pan</td>
+                        <td>Sin queso</td>
+                        <td>UN</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Almuerzo A</td>
+                        <td>Almuerzo ejecutivo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Desayuno B</td>
+                        <td>Desayuno basico</td>
+                        <td>Puede elegir chocolate o cafe</td>
+                        <td>UN</td>
+                        <td>10000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- <div class="spacer">
+            &nbsp;
+        </div> -->
+
+        <div class="center-card mdl-card mdl-shadow--2dp">
+
+            <div class="mdl-card__title uis-off-colors">
+                <h1 class="mdl-card__title-text small-font">Producto Personalizado</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+                En caso de no encontrar el producto deseado en la lista
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+                <fieldset class="container-custom">
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info-input">
+                        <input class="mdl-textfield__input info-input" type="text" id="info-input-1">
+                        <label class="mdl-textfield__label" for="info-input-1">Identificador</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="info-input-2">
+                        <label class="mdl-textfield__label" for="info-input-2">Descripcion</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="info-input-2">
+                        <label class="mdl-textfield__label" for="info-input-2">Especificaciones</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label info-input">
+                        <input class="mdl-textfield__input info-input" type="text" id="info-input-1">
+                        <label class="mdl-textfield__label" for="info-input-1">Unidad</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="info-input-2">
+                        <label class="mdl-textfield__label" for="info-input-2">Valor</label>
+                    </div>
+
+                    <button
+                        class="uis-off-colors auto-margin mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent buttons">
+                        Agregar producto
+                    </button>
+                </fieldset>
+
+
+            </div>
+        </div>
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div class="center-card mdl-card mdl-shadow--2dp">
+
+            <div class="mdl-card__title uis-colors">
+                <h2 class="mdl-card__title-text ">Orden</h2>
+            </div>
+
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Identificador</th>
+                        <th>Descripcion</th>
+                        <th>Especificaciones</th>
+                        <th>Unidad</th>
+                        <th>Valor</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Desayuno A</td>
+                        <td>Arepa con pan</td>
+                        <td>Sin queso</td>
+                        <td>UN</td>
+                        <td>10000</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Almuerzo A</td>
+                        <td>Almuerzo ejecutivo</td>
+                        <td></td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <div class="spacer">
+                &nbsp;
+            </div> -->
+
+            <!-- Carta de controles de orden -->
+
+            <span class="inner-card mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <span>
+                        <button class="mdl-button mdl-button--raised fill-horizontal uis-off-colors" id="boton-remover">
+                            <span class="mdl-button__label">Remover Seleccionado</span>
+                        </button>
+                    </span>
+                </div>
+            </span>
+
+            <span class="control-container inner-card mdl-card ">
+                <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--6-col">
+                    <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea>
+                    <label class="mdl-textfield__label" for="sample5">Inserte especificaciones de orden (si
+                        aplica)</label>
+                </div>
+
+                <!-- <span class="display-inline">
+                    <div class="container solo-25-per">
+                        <input class="mdl-textfield__input" type="date" id="date">
+                        <input type="time" class="half-fill-horizontal">
+                    </div>
+                    <label class="mdl-text-field mdl-text-field--filled fill-horizontal">
+                        <span class="mdl-text-field__ripple"></span>
+                        <span class="mdl-floating-label" id="lugar-entrega">Edificio, piso, dirección completa</span>
+                        <input class="mdl-text-field__input" type="text" aria-labelledby="lugar-entrega">
+                        <span class="mdl-line-ripple"></span>
+                    </label>
+                </span> -->
+
+                <div
+                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col mdl-textfield--floating-label has-placeholder">
+                    <input class="mdl-textfield__input" type="date" id="date">
+                    <label class="mdl-textfield__label" for="date">Fecha y hora de entrega</label>
+                    <input class="mdl-textfield__input" type="time" id="time">
+                </div>
+
+            </span>
+
+            <fieldset class="display-inline auto-width">
+
+            </fieldset>
+
+            <span class="container">
+                <button class="mdl-button mdl-js-button mdl-button--raised half-fill-horizontal" id="boton-descargar">
+                    Descargar plantilla
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised half-fill-horizontal" id="edwaaaaaar">
+                    Subir plantilla
+                </button>
+            </span>
+
+            <!-- Espacio al final -->
+            &nbsp;
+
+        </div>
+
+    </form>
+
+    <div class="spacer">
+        &nbsp;
+    </div>
+
+    <div class="spacer">
+        &nbsp;
+    </div>
+
+
+
+</body>
+
+</html>
